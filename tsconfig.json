@@ -9,7 +9,11 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
-    "types": ["node", "cypress"]
+    "types": ["node", "cypress"],
+    "paths": {
+      "@service/*": ["./cypress/services/*"],
+      "@page/*": ["./cypress/pages/*"]
+    }
   },
   "exclude": ["node_modules", "./.github", "./.vscode", "./artifacts"]
 }

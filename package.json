@@ -14,6 +14,10 @@
     "test": "cypress run"
   },
   "devDependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@cypress/webpack-preprocessor": "^5.11.1",
+    "babel-loader": "^8.2.5",
     "cypress": "^8.3.0",
     "cypress-mochawesome-reporter": "^2.2.1",
     "cypress-multi-reporters": "^1.5.0",
@@ -23,6 +27,7 @@
     "har-validator": "^5.1.5",
     "junit-report-merger": "^3.0.1",
     "mocha-junit-reporter": "^2.0.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.4.1",
+    "webpack": "^5.72.0"
   }
 }

@@ -1,4 +1,4 @@
-import { BlogPosts } from '../../services/blog-posts';
+import { BlogPosts } from '@service/blog-posts';
 
 describe('Basic blog', () => {
   const blogPosts = new BlogPosts();
