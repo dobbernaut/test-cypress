@@ -1,17 +1,19 @@
 {
   "name": "test-cypress",
   "version": "0.0.1",
-  "description": "cypress test framework poc",
+  "description": "testing with cypress",
   "license": "UNLICENSED",
   "scripts": {
+    "ci": "rm -rf node_modules && yarn install --frozen-lockfile",
     "preinstall": "sh ./scripts/preinstall.sh",
-    "prettier:check": "prettier --check .",
-    "prettier:write": "prettier --write .",
+    "prettier-check": "prettier --check .",
+    "prettier-write": "prettier --write .",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix && yarn lint",
-    "lint:pretty": "yarn lint && yarn prettier:check",
-    "lint:fix:pretty": "yarn lint:fix && yarn prettier:write",
-    "test": "cypress run"
+    "lint-fix": "eslint . --fix && yarn lint",
+    "lint-pretty": "yarn lint && yarn prettier-check",
+    "lint-fix-pretty": "yarn lint-fix && yarn prettier-write",
+    "test": "cypress run",
+    "test-watch": "cypress open"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
