@@ -13,7 +13,7 @@ export class StoreCatalogSearchPage {
    * @returns {Cypress.Chainable<number>}
    */
   getNumberOfSearchItems() {
-    return cy.get(this.#numberOfSearchItems).then((number) => {
+    return cy.get(this.#numberOfSearchItems, { timeout: 10000 }).then((number) => {
       return parseInt(number.text(), 10);
     });
   }
